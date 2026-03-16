@@ -183,7 +183,7 @@ public:
             // Имитация отжига
             if (delta < 0 || (std::exp(-delta / T) > (double)rand() / RAND_MAX)) {
                 std::reverse(path.begin() + i, path.begin() + j + 1);
-		current_sum += delta;
+				current_sum += delta;
             }
             
             // Уменьшаем температуру
